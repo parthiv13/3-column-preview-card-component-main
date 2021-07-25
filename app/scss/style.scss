@@ -1,0 +1,116 @@
+@import "variables";
+@import "globals";
+
+.container {
+    width: 1100px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cyan {
+    background-color: $Darkcyan;
+}
+
+.darkCyan {
+    background-color: $Verydarkcyan;
+}
+
+.orange {
+    background-color: $Brightorange;
+    color: $Brightorange;
+}
+
+.card {
+    width: 365px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-content {
+    width: 250px;
+    height: 490px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    color: $Transparentwhite;
+}
+
+.card-title {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 40px;
+    font-weight: 700;
+    color: $Verylightgray;
+}
+
+.card-description {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.btn {
+    width: 180px;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    background-color: white;
+    color: transparent;
+    cursor: pointer;
+    transition: opacity 2s ease-in;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.btn:hover {
+    opacity: 1;
+    background-color: transparent;
+    border: 2px solid white;
+    color: $Verylightgray;
+}
+
+.color-orange {
+    color: $Brightorange;
+}
+
+.color-cyan {
+    color: $Darkcyan;
+}
+
+.color-darkCyan {
+    color: $Verydarkcyan;
+}
+
+.attribution { 
+    font-size: 11px; 
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 69em) {
+    body {
+        height: 100%;
+    }
+
+    .container {
+        padding: 50px;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .attribution {
+        position: relative;
+    }
+}
